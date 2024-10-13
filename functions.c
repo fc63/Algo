@@ -16,3 +16,11 @@ struct BiNode* newBiNode(int data, struct BiNode* parent) {
     BiNode->parent = parent;
     return BiNode;
 }
+
+//Binary Tree'yi in-order gezen fonksiyon
+void inorderTraversal(struct Node* node) {
+    if (node == NULL) return;
+    inorderTraversal(node->left);
+    printf("%d ", node->data);
+    inorderTraversal(node->right);
+}
