@@ -9,5 +9,6 @@ struct BiNode {
 };
 struct BiNode* newBiNode(int data, struct BiNode* parent)
 void printArray(int A[], int size);
+void inorderTraversal(struct Node* node)
 
 #endif
