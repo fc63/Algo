@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "functions.h"
 
 void merge(int arr[], int l, int m, int r) {
@@ -41,7 +40,7 @@ void mergeSort(int arr[], int l, int r) {
         merge(arr, l, m, r);
     }
 }
-int main() {
+int main2() {
     int arr[] = {12,11,13,5,6,7};
     int arr_size = sizeof(arr) / sizeof(arr[0]);
     printf("Given array is \n");
