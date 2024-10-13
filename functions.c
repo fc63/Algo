@@ -7,6 +7,7 @@ void printArray(int A[], int size) {
     printf("\n");
 }
 
+//Binary Tree için Node oluşturma fonksiyonu
 struct BiNode* newBiNode(int data, struct BiNode* parent) {
     struct BiNode* BiNode = malloc(sizeof(struct BiNode));
     BiNode->data = data;
