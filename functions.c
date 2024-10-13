@@ -18,7 +18,7 @@ struct BiNode* newBiNode(int data, struct BiNode* parent) {
 }
 
 //Binary Tree'yi in-order gezen fonksiyon
-void inorderTraversal(struct Node* node) {
+void inorderTraversal(struct BiNode* node) {
     if (node == NULL) return;
     inorderTraversal(node->left);
     printf("%d ", node->data);
