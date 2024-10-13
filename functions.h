@@ -1,13 +1,13 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-struct Node {
+struct BiNode {
     int data;
-    struct Node* left;
-    struct Node* right;
-    struct Node* parent; //kontrol için kullanışlı
+    struct BiNode* left;
+    struct BiNode* right;
+    struct BiNode* parent; //kontrol için kullanışlı
 };
-struct Node* newNode(int data, struct Node* parent)
+struct BiNode* newBiNode(int data, struct BiNode* parent)
 void printArray(int A[], int size);
 
 #endif
