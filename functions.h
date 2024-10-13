@@ -7,8 +7,8 @@ struct BiNode {
     struct BiNode* right;
     struct BiNode* parent; //kontrol için kullanışlı
 };
-struct BiNode* newBiNode(int data, struct BiNode* parent)
+struct BiNode* newBiNode(int data, struct BiNode* parent);
 void printArray(int A[], int size);
-void inorderTraversal(struct Binode* node);
+void inorderTraversal(struct BiNode* node);
 
 #endif

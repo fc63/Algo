@@ -1,4 +1,7 @@
+#include "functions.h"
+
 #include <stdio.h>
+#include <stdlib.h>
 
 void printArray(int A[], int size) {
     int i;
@@ -9,7 +12,7 @@ void printArray(int A[], int size) {
 
 //Binary Tree için Node oluşturma fonksiyonu
 struct BiNode* newBiNode(int data, struct BiNode* parent) {
-    struct BiNode* BiNode = malloc(sizeof(struct BiNode));
+    struct BiNode* BiNode = (struct Node*)malloc(sizeof(struct BiNode));
     BiNode->data = data;
     BiNode->left = NULL;
     BiNode->right = NULL;
