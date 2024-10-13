@@ -7,11 +7,11 @@ void printArray(int A[], int size) {
     printf("\n");
 }
 
-struct Node* newNode(int data, struct Node* parent) {
-    struct Node* node = malloc(sizeof(struct Node));
-    node->data = data;
-    node->left = NULL;
-    node->right = NULL;
-    node->parent = parent;
-    return node;
+struct BiNode* newBiNode(int data, struct BiNode* parent) {
+    struct BiNode* BiNode = malloc(sizeof(struct BiNode));
+    BiNode->data = data;
+    BiNode->left = NULL;
+    BiNode->right = NULL;
+    BiNode->parent = parent;
+    return BiNode;
 }
