@@ -14,7 +14,8 @@ int main() {
     root2->right = newBiNode(8, root2);
     root2->left->left = newBiNode(9, root2->left);
 
-    root1->left->right->left = root2; // Çapraz bağlantı burada
+    // farklı bağlantıları deneyecektim 2400
+    root1->left->right->left = root2;
     root1->left->right->left->parent=root1->left->right;
 
     printf("In-order traversal of Tree 1: ");
