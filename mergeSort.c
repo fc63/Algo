@@ -42,11 +42,10 @@ void mergeSort(int arr[], int l, int r) {
 }
 int main3() {
     int arr[] = {12,11,13,5,6,7};
-    int arr_size = ARRAY_SIZE(arr);
     printf("Given array is \n");
-    printArray(arr, arr_size);
-    mergeSort(arr, 0, arr_size - 1);
+    printArray(arr, ARRAY_SIZE(arr));
+    mergeSort(arr, 0, ARRAY_SIZE(arr) - 1);
     printf("\nSorted array is \n");
-    printArray(arr, arr_size);
+    printArray(arr, ARRAY_SIZE(arr));
     return 0;
 }

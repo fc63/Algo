@@ -29,12 +29,9 @@ void quickSort(int arr[], int low, int high) {
 
 int main() {
     int arr[] = {10,7,8,9,1,5};
-    int n = ARRAY_SIZE(arr);
 
-    quickSort(arr, 0, n - 1);
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
+    quickSort(arr, 0, ARRAY_SIZE(arr) - 1);
+    printArray(arr,ARRAY_SIZE(arr));
 
     return 0;
 }
