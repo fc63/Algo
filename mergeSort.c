@@ -40,7 +40,7 @@ void mergeSort(int arr[], int l, int r) {
         merge(arr, l, m, r);
     }
 }
-int main2() {
+int main3() {
     int arr[] = {12,11,13,5,6,7};
     int arr_size = sizeof(arr) / sizeof(arr[0]);
     printf("Given array is \n");

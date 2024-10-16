@@ -1,6 +1,6 @@
 #include "functions.h"
 
-int main() {
+int main2() {
     // Tree1
     struct BiNode* root1 = newBiNode(1, NULL);
     root1->left = newBiNode(2, root1);

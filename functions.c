@@ -48,3 +48,9 @@ bool detectCrossLink(struct BiNode* root1, struct BiNode* root2) {
     // left-right childlerın recursive kontrolü
     return detectCrossLink(root1->left, root2) || detectCrossLink(root1->right, root2);
 }
+
+void swap(int * a, int * b) {
+    int t = * a;
+    * a = * b;
+    * b = t;
+}

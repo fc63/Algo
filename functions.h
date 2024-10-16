@@ -17,4 +17,6 @@ void inorderTraversal(struct BiNode* root);
 bool isCrossLinked(struct BiNode *root1, struct BiNode *root2);
 bool detectCrossLink(struct BiNode* root1, struct BiNode* root2);
 
+void swap(int * a, int * b);
+
 #endif
