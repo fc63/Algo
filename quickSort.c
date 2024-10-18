@@ -28,7 +28,7 @@ void quickSort(int low, int high) {
         quickSort(pi + 1, high);//sonra pivot+1'den high'a kadar.
     }
 }
-int main() {
+int qs() {
 
     printf("quickSort \n\n");
 

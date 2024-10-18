@@ -3,6 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "bs.h"
+#include "is.h"
+#include "ms.h"
+#include "qs.h"
+#include "bt.h"
 #define ARSZ(arr) (sizeof(arr) / sizeof((arr)[0])) //statik arraylerde çalışır. pointerlarda çalışmaz.
 
 struct BiNode {

@@ -40,7 +40,7 @@ void mergeSort(int left, int right) {
         merge(left, mid, right);
     }
 }
-int main3() {
+int ms() {
 
     printf("mergeSort \n\n");
 

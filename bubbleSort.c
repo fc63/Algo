@@ -17,7 +17,7 @@ void bubbleSort(int n){
             break;
     }
 }
-int main4() {
+int bs() {
 
     printf("bubbleSort \n\n");
 
