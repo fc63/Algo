@@ -11,25 +11,19 @@ int main() {
         printf("\n");
         switch(j) {
             case 1:
-                bs();
-            break;
+                return bs();
             case 2:
-                is();
-            break;
+                return is();
             case 3:
-                ms();
-            break;
+                return ms();
             case 4:
-                qs();
-            break;
+                return qs();
             case 5:
-                hs();
-            break;
+                return hs();
         }
         break;
         case 2:
-            bt();
-        break;
+            return bt();
     }
     return 0;
 }
