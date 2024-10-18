@@ -20,7 +20,7 @@ int part(int low, int high) {
 }
 void quickSort(int low, int high) {
     if (low < high) {
-        int pi = part(low, high);
+        int pi = part(low, high);//pivotu yerine yerleştirip yeni pivotun indeksini alır.
 
         quickSort(low, pi - 1);//önce low'dan pivot-1'e kadar sıralama yapıyor.
         quickSort(pi + 1, high);//sonra pivot+1'den high'a kadar.
