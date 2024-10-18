@@ -2,6 +2,6 @@
 #define IS_H
 
 int is();
-void insertionSort(int n);
+void insertionSort();
 
 #endif //IS_H

@@ -2,11 +2,12 @@
 
 static int arr[] = {12,11,13,5,6};
 
-void insertionSort(int n)
+void insertionSort()
 {
-    for (int i = 1; i < n; ++i) {
-        int key = arr[i];
-        int j = i - 1;
+    int i,j,key;
+    for (i = 1; i < ARSZ(arr); i++) {
+        key = arr[i];
+        j = i - 1;
 
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
@@ -22,7 +23,7 @@ int is()
     printf("Given array is \n");
     printArray(arr, ARSZ(arr));
 
-    insertionSort(ARSZ(arr));
+    insertionSort();
 
     printf("\nSorted array is \n");
     printArray(arr,ARSZ(arr));

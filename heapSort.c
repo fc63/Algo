@@ -24,12 +24,13 @@ void heapify(int i) {
     }
 }
 void heapSort() {
+    int i;
 
-    for (int i = ARSZ(arr) / 2 - 1; i >= 0; i--) {
+    for (i = ARSZ(arr) / 2 - 1; i >= 0; i--) {
         heapify(i);
     }
 
-    for (int i = ARSZ(arr) - 1; i > 0; i--) {
+    for (i = ARSZ(arr) - 1; i > 0; i--) {
         swap(& arr[0],& arr[i]);
         heapify(i);
     }
@@ -40,7 +41,7 @@ int hs() {
     printf("Given array is \n");
     printArray(arr, ARSZ(arr));
 
-    heapSort(ARSZ(arr));
+    heapSort();
 
     printf("Sorted array is \n");
     printArray(arr, ARSZ(arr));
