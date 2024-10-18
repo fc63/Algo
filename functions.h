@@ -11,10 +11,9 @@ struct BiNode {
     struct BiNode* right;
     struct BiNode* parent; //kontrol için kullanışlı
 };
-struct BiNode* newBiNode(int data, struct BiNode* parent);
 void printArray(int A[], int size);
+struct BiNode* newBiNode(int data, struct BiNode* parent);
 void inorderTraversal(struct BiNode* root);
-
 bool isCrossLinked(struct BiNode *root1, struct BiNode *root2);
 bool detectCrossLink(struct BiNode* root1, struct BiNode* root2);
 
