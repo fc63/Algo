@@ -1,0 +1,21 @@
+#include "functions.h"
+
+static int arr[] = {};
+
+blablaSort()
+{
+
+}
+int bla()
+{
+    printf("blablaSort \n\n");
+
+    printf("Given array is \n");
+    printArray(arr, ARSZ(arr));
+
+    blablaSort(ARSZ(arr));
+
+    printf("\nSorted array is \n");
+    printArray(arr,ARSZ(arr));
+    return 0;
+}
