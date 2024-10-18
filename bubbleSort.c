@@ -2,9 +2,10 @@
 
 static int arr[] = {64,34,25,12,22,11,90};
 
-void bubbleSort(){
-    int i=0, j=0;
-    bool swapped;
+void bubbleSort() {
+    int i = 0, j = 0;
+    bool swapped = false;
+
     for (i = 0; i < ARSZ(arr) - 1; i++) {
         swapped = false;
         for (j = 0; j < ARSZ(arr) - i - 1; j++) {

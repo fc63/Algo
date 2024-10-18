@@ -6,7 +6,6 @@ static int arr[] = {10,7,8,9,1,5};
     pivotu arr[i] ile swap ediyor(yani, pivotu kendinden büyük olan eleman ile swap ediyor).
     i+1 dönüyor.*/
 int part(int low, int high) {
-
     int i = low - 1;
     int j = 0;
 
@@ -16,13 +15,11 @@ int part(int low, int high) {
             swap( & arr[i], & arr[j]);//bulunan eleman ile indeksteki elemanı swap ediyor. (pivotu değil!)
         }
     }
-
     swap( & arr[i + 1], & arr[high]);//pivottaki elemanı kendinden küçük son elemanın bir sağına atıyor.
     return i + 1;//pivotun atandığı array indeksini dönüyor
 }
 void quickSort(int low, int high) {
     if (low < high) {
-
         int pi = part(low, high);
 
         quickSort(low, pi - 1);//önce low'dan pivot-1'e kadar sıralama yapıyor.

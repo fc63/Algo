@@ -1,7 +1,8 @@
 #include "functions.h"
 
 int main() {
-    int i=0,j=0;
+    int i = 0, j = 0;
+
     printf("1. Sort\n2. Btr\n\nYour choice:");
     scanf("%d",&i);
     switch(i) {

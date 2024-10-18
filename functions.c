@@ -1,7 +1,7 @@
 #include "functions.h"
 
 void printArray(int A[], int size) {
-    int i;
+    int i = 0;
     for (i = 0; i < size; i++)
         printf("%d ", A[i]);
     printf("\n");
@@ -27,17 +27,20 @@ void inorderTraversal(struct BiNode* root) {
 
 //cross-link tespit ettiğinde true dönen fonksiyon
 bool isCrossLinked(struct BiNode *root1, struct BiNode *root2) {
-    if (root1 == NULL || root2 == NULL) return false;
+    if (root1 == NULL || root2 == NULL)
+        return false;
+
     // Eğer node, diğer ağacın rootu ile veya rootun left/right çocuklarıyla aynıysa cross-link vardır
-    if (root1 == root2 || root1 == root2->left || root1 == root2->right) {
+    if (root1 == root2 || root1 == root2->left || root1 == root2->right)
         return true;
-    }
+
     // Diğer treenin left ve right childlerının recursive kontrolü
     return isCrossLinked(root1, root2->left) || isCrossLinked(root1, root2->right);
 }
 
 bool detectCrossLink(struct BiNode* root1, struct BiNode* root2) {
-    if (root1 == NULL) return false;
+    if (root1 == NULL)
+        return false;
 
     // Eğer root1'in herhangi bir nodu root2'deki bir nod ile aynı ise cross-link vardır
     if (isCrossLinked(root1, root2)) {
