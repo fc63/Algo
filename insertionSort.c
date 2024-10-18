@@ -4,7 +4,7 @@ static int arr[] = {12,11,13,5,6};
 
 void insertionSort()
 {
-    int i,j,key;
+    int i=0,j=0,key=0;
     for (i = 1; i < ARSZ(arr); i++) {
         key = arr[i];
         j = i - 1;
@@ -18,9 +18,7 @@ void insertionSort()
 }
 int is()
 {
-    printf("insertionSort \n\n");
-
-    printf("Given array is \n");
+    printf("insertionSort \n\nGiven array is \n");
     printArray(arr, ARSZ(arr));
 
     insertionSort();

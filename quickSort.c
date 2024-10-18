@@ -8,8 +8,9 @@ static int arr[] = {10,7,8,9,1,5};
 int part(int low, int high) {
 
     int i = low - 1;
+    int j = 0;
 
-    for (int j = low; j <= high - 1; j++) {
+    for (j = low; j <= high - 1; j++) {
         if (arr[j] < arr[high]) {// pivotumuz array[high]
             i++;//pivottan küçük eleman bulduğunda indexi bir sağa kaydırıyor
             swap( & arr[i], & arr[j]);//bulunan eleman ile indeksteki elemanı swap ediyor. (pivotu değil!)
@@ -29,10 +30,7 @@ void quickSort(int low, int high) {
     }
 }
 int qs() {
-
-    printf("quickSort \n\n");
-
-    printf("Given array is \n");
+    printf("quickSort \n\nGiven array is \n");
     printArray(arr, ARSZ(arr));
 
     quickSort(0, ARSZ(arr) - 1);

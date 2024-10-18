@@ -3,7 +3,7 @@
 static int arr[] = {64,34,25,12,22,11,90};
 
 void bubbleSort(){
-    int i, j;
+    int i=0, j=0;
     bool swapped;
     for (i = 0; i < ARSZ(arr) - 1; i++) {
         swapped = false;
@@ -18,10 +18,7 @@ void bubbleSort(){
     }
 }
 int bs() {
-
-    printf("bubbleSort \n\n");
-
-    printf("Given array is \n");
+    printf("bubbleSort \n\nGiven array is \n");
     printArray(arr, ARSZ(arr));
 
     bubbleSort();

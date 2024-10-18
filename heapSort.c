@@ -24,7 +24,7 @@ void heapify(int i) {
     }
 }
 void heapSort() {
-    int i;
+    int i=0;
 
     for (i = ARSZ(arr) / 2 - 1; i >= 0; i--) {
         heapify(i);
@@ -36,9 +36,7 @@ void heapSort() {
     }
 }
 int hs() {
-    printf("heapSort \n\n");
-
-    printf("Given array is \n");
+    printf("heapSort \n\nGiven array is \n");
     printArray(arr, ARSZ(arr));
 
     heapSort();
