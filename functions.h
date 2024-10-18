@@ -8,6 +8,7 @@
 #include "ms.h"
 #include "qs.h"
 #include "bt.h"
+#include "hs.h"
 #define ARSZ(arr) (sizeof(arr) / sizeof((arr)[0])) //statik arraylerde çalışır. pointerlarda çalışmaz.
 
 struct BiNode {

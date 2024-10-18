@@ -6,7 +6,7 @@ int main() {
     scanf("%d",&i);
     switch(i) {
         case 1:
-        printf("1. Bubble Sort\n2. Insertion Sort\n3. Merge Sort\n4. Quick Sort\n\nYour choice:");
+        printf("1. Bubble Sort\n2. Insertion Sort\n3. Merge Sort\n4. Quick Sort\n5. Heap Sort\n\nYour choice:");
         scanf("%d",&j);
         printf("\n");
         switch(j) {
@@ -21,6 +21,9 @@ int main() {
             break;
             case 4:
                 qs();
+            break;
+            case 5:
+                hs();
             break;
         }
         break;
