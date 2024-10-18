@@ -21,7 +21,6 @@ int main() {
             case 5:
                 return hs();
         }
-        break;
         case 2:
             return bt();
     }
