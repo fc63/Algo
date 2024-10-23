@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "h/functions.h"
 
 int bt() {
     // Tree1

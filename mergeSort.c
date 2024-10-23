@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "h/functions.h"
 
 static int arr[] = {12,11,13,5,6,7};
 

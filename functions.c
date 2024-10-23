@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "h/functions.h"
 
 void printArray(int A[], int size) {
     int i = 0;
