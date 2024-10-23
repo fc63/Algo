@@ -8,7 +8,7 @@ void bubbleSort() {
 
     for (i = 0; i < ARSZ(arr) - 1; i++) {
         swapped = false;
-        for (j = 0; j < ARSZ(arr) - i - 1; j++) {
+        for (j = 0; j < ARSZ(arr) - 1 - i; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(&arr[j], &arr[j + 1]);
                 swapped = true;

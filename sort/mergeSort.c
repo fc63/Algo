@@ -3,11 +3,13 @@
 static int arr[] = {12,11,13,5,6,7};
 
 void merge(int left, int mid, int right) {
+    //değişken kısmı
     int i = 0, j = 0, k = left; //k target array indexi
     int n1 = mid - left + 1; //left ve mid arasındaki eleman sayısı (left ve mid dahil)
     int n2 = right - mid; //mid+1 ile right arasındaki eleman sayısı (mid+1 ve right dahil)
     int L[n1], R[n2];
 
+    //fonksiyon kısmı
     for (i = 0; i < n1; i++)
         L[i] = arr[left + i]; //left'den başlayıp mid'e kadar atama yapıyor
 
