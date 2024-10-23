@@ -7,7 +7,7 @@ int main() {
     scanf("%d",&i);
     switch(i) {
         case 1:
-        printf("1. Bubble Sort\n2. Insertion Sort\n3. Merge Sort\n4. Quick Sort\n5. Heap Sort\n\nYour choice:");
+        printf("1. Bubble Sort\n2. Insertion Sort\n3. Merge Sort\n4. Quick Sort\n5. Heap Sort\n6. Counting Sort\n\nYour choice:");
         scanf("%d",&j);
         printf("\n");
         switch(j) {
@@ -21,6 +21,8 @@ int main() {
                 return qs();
             case 5:
                 return hs();
+            case 6:
+                return cs();
         }
         case 2:
             return bt();
