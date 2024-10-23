@@ -18,7 +18,6 @@ add_executable(Algo
         h/is.h
         h/ms.h
         h/qs.h
-        cmake-build-debug/bt.h
         h/bt.h
         sort/heapSort.c
         h/hs.h
