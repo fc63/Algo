@@ -57,3 +57,13 @@ void swap(int * a, int * b) {
     * a = * b;
     * b = t;
 }
+
+int* array0(int size) {
+    int* arr = calloc(size, sizeof(int));
+
+    if (arr == NULL) {
+        return NULL;
+    }
+
+    return arr;
+}

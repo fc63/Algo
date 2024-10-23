@@ -2,14 +2,15 @@
 
 static int arr[] = {4,3,12,1,5,5,3,9};
 
-void countingSort(){
-    int m = 0, i = 0;
-    int * outArr = malloc(ARSZ(arr) * sizeof(int));
+void countingSort() {
+    //değişkenler
+    int m = 0, i = 0, outArr[ ARSZ(arr) ];
     for (i = 0; i < ARSZ(arr); i++)
         if (arr[i] > m)
             m = arr[i];
-    int * countArr = calloc(m + 1, sizeof(int));
+    int* countArr = array0(m + 1);
 
+    //fonksiyon kısmı
     for (i = 0; i < ARSZ(arr); i++)
         countArr[arr[i]]++;
 
@@ -23,9 +24,6 @@ void countingSort(){
 
     for (i = 0; i < ARSZ(arr); i++)
         arr[i] = outArr[i];
-
-    free(countArr);
-    free(outArr);
 }
 int cs(){
     printf("countingSort \n\n");

@@ -26,4 +26,6 @@ bool detectCrossLink(struct BiNode* root1, struct BiNode* root2);
 
 void swap(int * a, int * b);
 
+int* array0(int size);
+
 #endif
