@@ -5,7 +5,7 @@ static int arr[] = {4,3,12,1,5,5,3,9};
 void countingSort() {
     //değişkenler
     int max = maxarr(arr, ARSZ(arr)), i = 0;
-    int min = minarr(arr, ARSZ(arr)), t_arr[ARSZ(arr)];
+    int min = minarr(arr, ARSZ(arr)), n_arr[ARSZ(arr)];
     int * pos = array0(max + 1 - min);
 
     //fonksiyon kısmı
@@ -13,10 +13,10 @@ void countingSort() {
         pos[arr[i] - min]++; // her value'dan kaç adet olduğunu ilgili pozisyona yazdı.
 
     for (i = 1; i <= max; i++)
-        pos[i] += pos[i - 1]; //pozisyonlarını belirledi
+        pos[i] += pos[i - 1]; //kümülatif toplamayla pozisyonlarını belirledi
 
     for (i = ARSZ(arr) - 1; i >= 0; i--) //i array indeksi: array'in en sondaki elamanın indeksinden 0'a kadar döngüde.
-        t_arr[pos[arr[i] - min]-- - 1] = arr[i];
+        n_arr[pos[arr[i] - min]-- - 1] = arr[i]; //pozisyonlara atama yapıyor ve her atama sırasında ilgili pozisyonun pos arrayindeki değerini 1 eksiltiyor
     //
 
     //bellek yönetimi
@@ -24,7 +24,7 @@ void countingSort() {
 
     //return output
     for (i = 0; i < ARSZ(arr); i++)
-        arr[i] = t_arr[i];
+        arr[i] = n_arr[i];
 }
 int cs() {
     printf("countingSort \n\n");
