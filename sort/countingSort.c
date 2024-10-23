@@ -4,28 +4,29 @@ static int arr[] = {4,3,12,1,5,5,3,9};
 
 void countingSort() {
     //değişkenler
-    int m = 0, i = 0, outArr[ ARSZ(arr) ];
-    for (i = 0; i < ARSZ(arr); i++)
-        if (arr[i] > m)
-            m = arr[i];
-    int* countArr = array0(m + 1);
+    int max = maxarr(arr, ARSZ(arr)), i = 0;
+    int min = minarr(arr, ARSZ(arr)), t_arr[ARSZ(arr)];
+    int * pos = array0(max + 1 - min);
 
     //fonksiyon kısmı
     for (i = 0; i < ARSZ(arr); i++)
-        countArr[arr[i]]++;
+        pos[arr[i] - min]++; // her value'dan kaç adet olduğunu ilgili pozisyona yazdı.
 
-    for (i = 1; i <= m; i++)
-        countArr[i] += countArr[i - 1];
+    for (i = 1; i <= max; i++)
+        pos[i] += pos[i - 1]; //pozisyonlarını belirledi
 
-    for (i = ARSZ(arr) - 1; i >= 0; i--) {
-        outArr[countArr[arr[i]] - 1] = arr[i];
-        countArr[arr[i]]--;
-    }
+    for (i = ARSZ(arr) - 1; i >= 0; i--) //i array indeksi: array'in en sondaki elamanın indeksinden 0'a kadar döngüde.
+        t_arr[pos[arr[i] - min]-- - 1] = arr[i];
+    //
 
+    //bellek yönetimi
+    free(pos);
+
+    //return output
     for (i = 0; i < ARSZ(arr); i++)
-        arr[i] = outArr[i];
+        arr[i] = t_arr[i];
 }
-int cs(){
+int cs() {
     printf("countingSort \n\n");
 
     printf("Given array is \n");
@@ -34,7 +35,7 @@ int cs(){
     countingSort();
 
     printf("\nSorted array is \n");
-    printArray(arr,ARSZ(arr));
+    printArray(arr, ARSZ(arr));
 
     return 0;
 }

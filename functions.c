@@ -67,3 +67,23 @@ int* array0(int size) {
 
     return arr;
 }
+
+int maxarr(int input_array[], int array_size) {
+    int max_val = input_array[0];
+    for (int i = 1; i < array_size; i++) {
+        if (input_array[i] > max_val) {
+            max_val = input_array[i];
+        }
+    }
+    return max_val;
+}
+
+int minarr(int input_array[], int array_size) {
+    int min_val = input_array[0];
+    for (int i = 1; i < array_size; i++) {
+        if (input_array[i] < min_val) {
+            min_val = input_array[i];
+        }
+    }
+    return min_val;
+}
